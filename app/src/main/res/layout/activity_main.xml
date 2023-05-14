@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/crawlBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="40dp"
+        android:text="크롤링 하러가기" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/crawlBtn"
+        android:layout_marginLeft="40dp"
+        android:text="로그인 하러가기" />
+
+    <fragment
+        android:id="@+id/crawlingFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/crawlBtn"
+        android:layout_margin="10dp"
+        android:name="com.example.mp_termproject.Crawling"/>
+
+</RelativeLayout>
